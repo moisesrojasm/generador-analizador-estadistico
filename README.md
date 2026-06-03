@@ -3,7 +3,7 @@
 # Estructura del Proyecto
 
 ```plaintext
-Proyecto_Practica2/
+generador-analizador-estadistico/
 ├── .gitignore   
 ├── .gitattributes        
 ├── Makefile          
