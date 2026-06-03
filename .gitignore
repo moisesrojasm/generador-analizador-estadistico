@@ -53,3 +53,20 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+
+# Reglas Específicas del Proyecto
+
+# Configuraciones de IDEs locales
+.idea/
+.vscode/
+
+# Carpetas de compilación
+bin/
+build/
+
+# Documentación autogenerada por Doxygen
+docs/html/
+
+# Archivos del sistema operativo (macOS)
+.DS_Store
