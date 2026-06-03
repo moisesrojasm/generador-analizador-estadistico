@@ -19,10 +19,10 @@ Proyecto_Practica2/
 │   ├── generacion.h
 │   └── ordenamiento.h
 └── src/
-├── estadistica.c
-├── generacion.c
-├── main.c
-└── ordenamiento.c
+    ├── estadistica.c
+    ├── generacion.c
+    ├── main.c
+    └── ordenamiento.c
 ```
 
 ## Equipo
