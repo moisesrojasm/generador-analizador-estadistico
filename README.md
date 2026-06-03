@@ -4,7 +4,8 @@
 
 ```plaintext
 Proyecto_Practica2/
-├── .gitignore          
+├── .gitignore   
+├── .gitattributes        
 ├── Makefile          
 ├── README.md
 ├── bin/
