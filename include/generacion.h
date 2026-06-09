@@ -1,13 +1,18 @@
 #ifndef GENERACION_H
 #define GENERACION_H
 
-// TODO: Implementar conversión base de rand() a U(0,1)
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
-void generarUniforme(double *arreglo, int n, double min, double max);
-void generarNormal(double *arreglo, int n, double mu, double sigma);
-void generarLaplace(double *arreglo, int n, double mu, double b);
 
-// Función para restringir al intervalo [min, max] mediante recorte o rechazo
-void aplicarRestriccion(double *arreglo, int n, double min, double max);
 
-#endif // GENERACION_H
+// Prototipos de funciones accesibles por el main
+void aplicarRestriccion(double *datos, int n, double min, double max);
+void capturarManual(double *datos, int *n);
+void generarUniforme(double *datos, int n, double min, double max);
+void generarNormal(double *datos, int n, double mu, double sigma, double min, double max);
+void generarLaplace(double *datos, int n, double mu, double b, double min, double max);
+
+/* GENERACION_H */
+#endif
