@@ -196,7 +196,7 @@ void menuPrincipal() {
     int op;
 
     printf("=============================================\n");
-    printf("  ANALIZADOR ESTADISTICO  -  Practica 2\n");
+    printf("  ANALIZADOR ESTADISTICO  -  Proyecto 2\n");
     printf("=============================================\n");
 
     do {
