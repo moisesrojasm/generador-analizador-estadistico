@@ -13,31 +13,6 @@
 #include <math.h>
 
 /* ----------------------------------------------------------
- * Funciones auxiliares internas
- * No se declaran en el .h porque solo se usan aqui adentro
- * ---------------------------------------------------------- */
-
-/* Calcula la media, se usa internamente para no repetir el loop */
-double aux_media(double *arreglo, int n) {
-    double suma = 0.0;
-    for (int i = 0; i < n; i++) {
-        suma += arreglo[i];
-    }
-    return suma / n;
-}
-
-/* Calcula la desviacion estandar usando aux_media */
-double aux_desviacion(double *arreglo, int n) {
-    double media = aux_media(arreglo, n);
-    double suma = 0.0;
-    for (int i = 0; i < n; i++) {
-        double diff = arreglo[i] - media;
-        suma += diff * diff;
-    }
-    return sqrt(suma / n);
-}
-
-/* ----------------------------------------------------------
  * Medidas de posicion central
  * ---------------------------------------------------------- */
 
@@ -121,7 +96,7 @@ double calcularModa(double *arreglo, int n) {
  * ---------------------------------------------------------- */
 
 double calcularVarianza(double *arreglo, int n) {
-    double media = aux_media(arreglo, n);
+    double media = calcularMedia(arreglo, n);
     double suma  = 0.0;
     for (int i = 0; i < n; i++) {
         double diff = arreglo[i] - media;
@@ -131,16 +106,22 @@ double calcularVarianza(double *arreglo, int n) {
 }
 
 double calcularDesviacionEstandar(double *arreglo, int n) {
-    return sqrt(calcularVarianza(arreglo, n));
+    double media = calcularMedia(arreglo, n);
+    double suma = 0.0;
+    for (int i = 0; i < n; i++) {
+        double diff = arreglo[i] - media;
+        suma += diff * diff;
+    }
+    return sqrt(suma / n);
 }
 
 double calcularCoeficienteVariacion(double *arreglo, int n) {
-    double media = aux_media(arreglo, n);
+    double media = calcularMedia(arreglo, n);
     if (media == 0.0) {
         return NAN;  /* no se puede dividir entre cero */
     }
     /* CV = sigma / |media|, segun la formula del PDF */
-    return aux_desviacion(arreglo, n) / fabs(media);
+    return calcularDesviacionEstandar(arreglo, n) / fabs(media);
 }
 
 /* ----------------------------------------------------------
@@ -292,7 +273,7 @@ double calcularMomentoCentrado1(double *arreglo, int n) {
 
 double calcularMomentoCentrado2(double *arreglo, int n) {
     /* el momento centrado de orden 2 es la varianza */
-    double media = aux_media(arreglo, n);
+    double media = calcularMedia(arreglo, n);
     double suma  = 0.0;
     for (int i = 0; i < n; i++) {
         double diff = arreglo[i] - media;
@@ -302,7 +283,7 @@ double calcularMomentoCentrado2(double *arreglo, int n) {
 }
 
 double calcularMomentoCentrado3(double *arreglo, int n) {
-    double media = aux_media(arreglo, n);
+    double media = calcularMedia(arreglo, n);
     double suma  = 0.0;
     for (int i = 0; i < n; i++) {
         double diff = arreglo[i] - media;
@@ -312,7 +293,7 @@ double calcularMomentoCentrado3(double *arreglo, int n) {
 }
 
 double calcularMomentoCentrado4(double *arreglo, int n) {
-    double media = aux_media(arreglo, n);
+    double media = calcularMedia(arreglo, n);
     double suma  = 0.0;
     for (int i = 0; i < n; i++) {
         double diff  = arreglo[i] - media;
@@ -328,7 +309,7 @@ double calcularMomentoCentrado4(double *arreglo, int n) {
 
 double calcularMomentoEstandar2(double *arreglo, int n) {
     /* momento estandar de orden 2 = varianza / sigma^2 = 1 por definicion */
-    double desv = aux_desviacion(arreglo, n);
+    double desv = calcularDesviacionEstandar(arreglo, n);
     if (desv == 0.0) {
         return NAN;
     }
@@ -336,8 +317,8 @@ double calcularMomentoEstandar2(double *arreglo, int n) {
 }
 
 double calcularMomentoEstandar3(double *arreglo, int n) {
-    double media = aux_media(arreglo, n);
-    double desv  = aux_desviacion(arreglo, n);
+    double media = calcularMedia(arreglo, n);
+    double desv  = calcularDesviacionEstandar(arreglo, n);
     if (desv == 0.0) {
         return NAN;
     }
@@ -350,8 +331,8 @@ double calcularMomentoEstandar3(double *arreglo, int n) {
 }
 
 double calcularMomentoEstandar4(double *arreglo, int n) {
-    double media = aux_media(arreglo, n);
-    double desv  = aux_desviacion(arreglo, n);
+    double media = calcularMedia(arreglo, n);
+    double desv  = calcularDesviacionEstandar(arreglo, n);
     if (desv == 0.0) {
         return NAN;
     }
