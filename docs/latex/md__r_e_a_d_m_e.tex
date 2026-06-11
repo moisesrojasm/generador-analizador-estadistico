@@ -1,0 +1,49 @@
+\chapter{Análisis Estadístico y Generación Aleatoria }
+\hypertarget{md__r_e_a_d_m_e}{}\label{md__r_e_a_d_m_e}\index{Análisis Estadístico y Generación Aleatoria@{Análisis Estadístico y Generación Aleatoria}}
+\label{md__r_e_a_d_m_e_autotoc_md0}%
+\Hypertarget{md__r_e_a_d_m_e_autotoc_md0}%
+\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{\texorpdfstring{Descripción del Proyecto}{Descripción del Proyecto}}\label{md__r_e_a_d_m_e_autotoc_md1}
+Este proyecto es un programa modular desarrollado en C que permite obtener automáticamente el análisis estadístico de conjuntos de datos numéricos de hasta 100,000 muestras. Fue diseñado para generar escenarios de simulación y comparar la eficiencia de múltiples algoritmos de ordenamiento frente a diferentes distribuciones probabilísticas.
+
+El programa está estructurado bajo los más altos estándares de ingeniería de software, contando con modularidad estricta, rutinas de evaluación de rendimiento temporal y documentación autogenerada mediante Doxygen.\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysection{\texorpdfstring{Estructura del Proyecto}{Estructura del Proyecto}}\label{md__r_e_a_d_m_e_autotoc_md2}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{generador-\/analizador-\/estadistico/}
+\DoxyCodeLine{├──\ .gitignore\ \ \ }
+\DoxyCodeLine{├──\ .gitattributes\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{├──\ Makefile\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{├──\ README.md}
+\DoxyCodeLine{├──\ bin/}
+\DoxyCodeLine{├──\ build/}
+\DoxyCodeLine{├──\ docs/}
+\DoxyCodeLine{│\ \ \ ├──\ html/}
+\DoxyCodeLine{│\ \ \ ├──\ Reporte\_Proyecto2.pdf}
+\DoxyCodeLine{│\ \ \ └──\ Doxyfile}
+\DoxyCodeLine{├──\ include/}
+\DoxyCodeLine{│\ \ \ ├──\ estadistica.h}
+\DoxyCodeLine{│\ \ \ ├──\ generacion.h}
+\DoxyCodeLine{│\ \ \ └──\ ordenamiento.h}
+\DoxyCodeLine{└──\ src/}
+\DoxyCodeLine{\ \ \ \ ├──\ estadistica.c}
+\DoxyCodeLine{\ \ \ \ ├──\ generacion.c}
+\DoxyCodeLine{\ \ \ \ ├──\ main.c}
+\DoxyCodeLine{\ \ \ \ └──\ ordenamiento.c}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyItemize}
+\item {\ttfamily src/\+}:\+ Contiene el código fuente ({\ttfamily .c}), dividido en los módulos principales ({\ttfamily \doxylink{main_8c}{main.\+c}}, {\ttfamily \doxylink{generacion_8c}{generacion.\+c}}, {\ttfamily \doxylink{ordenamiento_8c}{ordenamiento.\+c}} y {\ttfamily \doxylink{estadistica_8c}{estadistica.\+c}}).
+\item {\ttfamily include/\+}:\+ Contiene los archivos de cabecera ({\ttfamily .h}) con los prototipos de las funciones de cada módulo.
+\item {\ttfamily bin/\+}:\+ Directorio de salida donde se aloja el ejecutable final tras la compilación.
+\item {\ttfamily docs/\+}:\+ Documentación del proyecto, incluyendo el reporte final en PDF y la documentación en HTML generada por Doxygen.
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysection{\texorpdfstring{Características Principales}{Características Principales}}\label{md__r_e_a_d_m_e_autotoc_md3}
+
+\begin{DoxyItemize}
+\item {\bfseries{Generador Aleatorio:\+}} Generación automática de datos usando las distribuciones Uniforme, Normal (Gaussiana) y Laplace (doble exponencial)
+\item {\bfseries{Modos de Parametrización:\+}} Las distribuciones pueden configurarse por modo de rango (ingresando el mínimo y máximo) o modo por parámetros (ingresando propiedades de la distribución, como la media y la varianza)
+\item {\bfseries{Motor de Ordenamiento:\+}} Implementación modular de 8 algoritmos de ordenamiento para evaluar su complejidad temporal y espacial:\+ Burbuja, Pares y nones, Selección, Inserción, Casilleros (Bucket Sort), Burbuja bidireccional (Cocktail Sort), Shell y Conteo (Counting Sort).
+\item {\bfseries{Análisis Estadístico:\+}} Cálculo de 15 medidas estadísticas independientes, incluyendo media, mediana, moda, varianza, percentiles, cuartiles, momentos centrados, momentos no centrados y curtosis
+\item {\bfseries{Doble Interfaz:\+}} El programa puede operarse de forma manual mediante un menú interactivo en consola ({\ttfamily printf}/\+{\ttfamily scanf}) o automatizarse a través de argumentos de línea de comandos ({\ttfamily argc}/\+{\ttfamily argv}). 
+\end{DoxyItemize}

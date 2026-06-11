@@ -1,0 +1,39 @@
+\doxysection{src/\+generacion.c File Reference}
+\hypertarget{generacion_8c}{}\label{generacion_8c}\index{src/generacion.c@{src/generacion.c}}
+
+
+Implementación del motor matemático de generación pseudoaleatoria y captura.  
+
+
+{\ttfamily \+\#include "{}generacion.\+h"{}}\newline
+{\ttfamily \+\#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \+\#include $<$math.\+h$>$}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{generacion_8c_ae71449b1cc6e6250b91f539153a7a0d3}\label{generacion_8c_ae71449b1cc6e6250b91f539153a7a0d3} 
+\+\#define {\bfseries M\+\_\+\+PI}~3.\+14159265358979323846
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{generacion_8c_a4aa517737da0d4e04b7b89a4afc9d48b}\label{generacion_8c_a4aa517737da0d4e04b7b89a4afc9d48b} 
+void {\bfseries aplicar\+Restriccion} (double \texorpdfstring{$\ast$}{*}datos, int n, double min, double max)
+\item 
+\Hypertarget{generacion_8c_a6fcb3ae63cf4868b59b1002019a30ba1}\label{generacion_8c_a6fcb3ae63cf4868b59b1002019a30ba1} 
+void {\bfseries capturar\+Manual} (double \texorpdfstring{$\ast$}{*}datos, int \texorpdfstring{$\ast$}{*}n)
+\item 
+\Hypertarget{generacion_8c_a890cf6611f1c204133c6a72473983871}\label{generacion_8c_a890cf6611f1c204133c6a72473983871} 
+void {\bfseries generar\+Uniforme} (double \texorpdfstring{$\ast$}{*}datos, int n, double min, double max)
+\item 
+\Hypertarget{generacion_8c_a2f12c84a6823255a5e44e4c15ebacceb}\label{generacion_8c_a2f12c84a6823255a5e44e4c15ebacceb} 
+void {\bfseries generar\+Normal} (double \texorpdfstring{$\ast$}{*}datos, int n, double mu, double sigma, double min, double max)
+\item 
+\Hypertarget{generacion_8c_a36f8b20bd3c74e91f0f234da6b1e4ead}\label{generacion_8c_a36f8b20bd3c74e91f0f234da6b1e4ead} 
+void {\bfseries generar\+Laplace} (double \texorpdfstring{$\ast$}{*}datos, int n, double mu, double b, double min, double max)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementación del motor matemático de generación pseudoaleatoria y captura. 
+

@@ -1,0 +1,78 @@
+\doxysection{src/\+main.c File Reference}
+\hypertarget{main_8c}{}\label{main_8c}\index{src/main.c@{src/main.c}}
+
+
+Punto de entrada principal. Coordina la lectura por CLI e interfaz interactiva.  
+
+
+{\ttfamily \+\#include $<$stdio.\+h$>$}\newline
+{\ttfamily \+\#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \+\#include $<$string.\+h$>$}\newline
+{\ttfamily \+\#include $<$time.\+h$>$}\newline
+{\ttfamily \+\#include $<$math.\+h$>$}\newline
+{\ttfamily \+\#include "{}generacion.\+h"{}}\newline
+{\ttfamily \+\#include "{}ordenamiento.\+h"{}}\newline
+{\ttfamily \+\#include "{}estadistica.\+h"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \doxymbox{\hyperlink{struct_caso_simulacion}{Caso\+Simulacion}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{main_8c_ae263c8a21831fd5eb6c135b81b7b683a}\label{main_8c_ae263c8a21831fd5eb6c135b81b7b683a} 
+\+\#define {\bfseries MAX\+\_\+\+MUESTRAS}~100000
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{main_8c_adfbaa271f44d828c6a42ce7e9affee88}\label{main_8c_adfbaa271f44d828c6a42ce7e9affee88} 
+void {\bfseries menu\+Principal} ()
+\item 
+\Hypertarget{main_8c_af0f04c4d0fc19afa01ee12e53e101666}\label{main_8c_af0f04c4d0fc19afa01ee12e53e101666} 
+void {\bfseries flujo\+Manual} ()
+\item 
+\Hypertarget{main_8c_a32809d18a7ba287a50e420c537cad45b}\label{main_8c_a32809d18a7ba287a50e420c537cad45b} 
+void {\bfseries flujo\+Simulacion} ()
+\item 
+\Hypertarget{main_8c_ad65723689b3b23ed6443146fb1b545b7}\label{main_8c_ad65723689b3b23ed6443146fb1b545b7} 
+void {\bfseries menu\+Ordenamiento} (int caso, const char \texorpdfstring{$\ast$}{*}distribucion)
+\item 
+\Hypertarget{main_8c_a9f49da2c842ef38964ad0ecc76cf38b9}\label{main_8c_a9f49da2c842ef38964ad0ecc76cf38b9} 
+void {\bfseries guardar\+Resultados} (int caso, const char \texorpdfstring{$\ast$}{*}distribucion, const char \texorpdfstring{$\ast$}{*}algoritmo, double \texorpdfstring{$\ast$}{*}arreglo, int n, double tiempo\+\_\+ord, double tiempo\+\_\+med)
+\item 
+\Hypertarget{main_8c_affeb7619b4ca7a6d6f9bc48585802d31}\label{main_8c_affeb7619b4ca7a6d6f9bc48585802d31} 
+void {\bfseries imprimir\+Medidas} (double \texorpdfstring{$\ast$}{*}arreglo, int n)
+\item 
+\Hypertarget{main_8c_a0ddf1224851353fc92bfbff6f499fa97}\label{main_8c_a0ddf1224851353fc92bfbff6f499fa97} 
+int {\bfseries main} (int argc, char \texorpdfstring{$\ast$}{*}argv\+[$\,$]\+)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{main_8c_ab39d1e17f0b9acf4815f4f34fdf30571}\label{main_8c_ab39d1e17f0b9acf4815f4f34fdf30571} 
+double {\bfseries datos} \+[MAX\+\_\+\+MUESTRAS]\+
+\item 
+\Hypertarget{main_8c_a7722c8ecbb62d99aee7ce68b1752f337}\label{main_8c_a7722c8ecbb62d99aee7ce68b1752f337} 
+int {\bfseries N}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Punto de entrada principal. Coordina la lectura por CLI e interfaz interactiva. 
+
+Flujo general:\+
+\begin{DoxyEnumerate}
+\item El usuario elige un caso (1-\/20) o ingresa datos manualmente.
+\item Se elige la distribucion y el algoritmo de ordenamiento.
+\item Se mide el tiempo de ordenamiento y el de calculo de medidas por separado.
+\item Se guarda una fila en resultados.\+txt con todos los datos del caso.
+\end{DoxyEnumerate}
+
+\begin{DoxyAuthor}{Author}
+Equipo Practica 2 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Junio 2026 
+\end{DoxyDate}

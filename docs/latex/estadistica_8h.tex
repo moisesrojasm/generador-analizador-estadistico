@@ -1,0 +1,673 @@
+\doxysection{include/\+estadistica.h File Reference}
+\hypertarget{estadistica_8h}{}\label{estadistica_8h}\index{include/estadistica.h@{include/estadistica.h}}
+
+
+Declaraciones de las funciones para el cálculo de medidas estadísticas.  
+
+
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \doxymbox{\hyperlink{estadistica_8h_a0ea202bffd5a03cc941aae7a92f4ad65}{calcular\+Maximo}} (double \texorpdfstring{$\ast$}{*}arreglo, int n)
+\begin{DoxyCompactList}\small\item\em Calcula el valor máximo del arreglo ordenado. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{estadistica_8h_aec127ae549b40c36185c17ea35d19a11}{calcular\+Minimo}} (double \texorpdfstring{$\ast$}{*}arreglo, int n)
+\begin{DoxyCompactList}\small\item\em Calcula el valor mínimo del arreglo ordenado. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{estadistica_8h_aa4999ccfdf597d4dd99885ebb07be578}{calcular\+Media}} (double \texorpdfstring{$\ast$}{*}arreglo, int n)
+\begin{DoxyCompactList}\small\item\em Calcula la media aritmética del arreglo. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{estadistica_8h_ac8b4efd1dcced6fe3a1dc9ae14b87ece}{calcular\+Media\+Geometrica}} (double \texorpdfstring{$\ast$}{*}arreglo, int n)
+\begin{DoxyCompactList}\small\item\em Calcula la media geométrica del arreglo. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{estadistica_8h_af6a90b9669629cd41ac2263251204413}{calcular\+Mediana}} (double \texorpdfstring{$\ast$}{*}arreglo, int n)
+\begin{DoxyCompactList}\small\item\em Calcula la mediana del arreglo ordenado. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{estadistica_8h_affc6f33e9534c7e2d0e8052ba9fc00f8}{calcular\+Moda}} (double \texorpdfstring{$\ast$}{*}arreglo, int n)
+\begin{DoxyCompactList}\small\item\em Calcula la moda del arreglo. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{estadistica_8h_a518ee8e1b1d0dc80ff97fba533937321}{calcular\+Varianza}} (double \texorpdfstring{$\ast$}{*}arreglo, int n)
+\begin{DoxyCompactList}\small\item\em Calcula la varianza poblacional del arreglo. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{estadistica_8h_a1bf3ddf7ea69b952446b70a1f7fa06b8}{calcular\+Desviacion\+Estandar}} (double \texorpdfstring{$\ast$}{*}arreglo, int n)
+\begin{DoxyCompactList}\small\item\em Calcula la desviación estándar poblacional del arreglo. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{estadistica_8h_a8bcfa68db515d873098a40836976698f}{calcular\+Coeficiente\+Variacion}} (double \texorpdfstring{$\ast$}{*}arreglo, int n)
+\begin{DoxyCompactList}\small\item\em Calcula el coeficiente de variación del arreglo. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{estadistica_8h_a3087996d85cfbcd47c526155d36e1b10}{calcular\+Primer\+Cuartil}} (double \texorpdfstring{$\ast$}{*}arreglo, int n)
+\begin{DoxyCompactList}\small\item\em Calcula el primer cuartil Q1 (percentil 25). \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{estadistica_8h_a520733f038e40a65d7cef8813e7abfd5}{calcular\+Segundo\+Cuartil}} (double \texorpdfstring{$\ast$}{*}arreglo, int n)
+\begin{DoxyCompactList}\small\item\em Calcula el segundo cuartil Q2 (mediana, percentil 50). \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{estadistica_8h_a11df4a126fc1ee68e1c198cebcdc099b}{calcular\+Tercer\+Cuartil}} (double \texorpdfstring{$\ast$}{*}arreglo, int n)
+\begin{DoxyCompactList}\small\item\em Calcula el tercer cuartil Q3 (percentil 75). \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{estadistica_8h_a2afe608a74c966fb30b74106777f1dd4}{calcular\+Cuarto\+Cuartil}} (double \texorpdfstring{$\ast$}{*}arreglo, int n)
+\begin{DoxyCompactList}\small\item\em Calcula el cuarto cuartil Q4 (máximo, percentil 100). \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{estadistica_8h_a6ef9c92996698a88e0752a751396b202}{calcular\+Decil}} (double \texorpdfstring{$\ast$}{*}arreglo, int n, int k)
+\begin{DoxyCompactList}\small\item\em Calcula el k-\/ésimo decil del arreglo ordenado. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{estadistica_8h_a6d333e694cc47a05228c8676846cbab5}{calcular\+Percentil}} (double \texorpdfstring{$\ast$}{*}arreglo, int n, int k)
+\begin{DoxyCompactList}\small\item\em Calcula el k-\/ésimo percentil del arreglo ordenado. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{estadistica_8h_a333d0fd67b806dbebe5e544f7ce83831}{calcular\+Momento0}} (double \texorpdfstring{$\ast$}{*}arreglo, int n)
+\begin{DoxyCompactList}\small\item\em Calcula el momento no centrado de orden 0. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{estadistica_8h_a8a841e040160d5527763e3c557ea8512}{calcular\+Momento1}} (double \texorpdfstring{$\ast$}{*}arreglo, int n)
+\begin{DoxyCompactList}\small\item\em Calcula el momento no centrado de orden 1 (media aritmética). \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{estadistica_8h_a3ec7450d62eb3be7bcbf1bb44ad79844}{calcular\+Momento2}} (double \texorpdfstring{$\ast$}{*}arreglo, int n)
+\begin{DoxyCompactList}\small\item\em Calcula el momento no centrado de orden 2. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{estadistica_8h_a09d635207a6bd7b87c1c81f3380107db}{calcular\+Momento3}} (double \texorpdfstring{$\ast$}{*}arreglo, int n)
+\begin{DoxyCompactList}\small\item\em Calcula el momento no centrado de orden 3. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{estadistica_8h_a4710d996b2354cceec94642164858992}{calcular\+Momento4}} (double \texorpdfstring{$\ast$}{*}arreglo, int n)
+\begin{DoxyCompactList}\small\item\em Calcula el momento no centrado de orden 4. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{estadistica_8h_a9d47b2017367cc4f92b3bf84346d7f6f}{calcular\+Momento\+Centrado0}} (double \texorpdfstring{$\ast$}{*}arreglo, int n)
+\begin{DoxyCompactList}\small\item\em Calcula el momento centrado de orden 0. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{estadistica_8h_a430adad833e91d8b1d2220ab5f1e0f96}{calcular\+Momento\+Centrado1}} (double \texorpdfstring{$\ast$}{*}arreglo, int n)
+\begin{DoxyCompactList}\small\item\em Calcula el momento centrado de orden 1. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{estadistica_8h_a01fb01e1a84e97a668b46ce3199e10d6}{calcular\+Momento\+Centrado2}} (double \texorpdfstring{$\ast$}{*}arreglo, int n)
+\begin{DoxyCompactList}\small\item\em Calcula el momento centrado de orden 2 (varianza). \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{estadistica_8h_a8f0a2ed711530e3bbc38df3c89ec34ba}{calcular\+Momento\+Centrado3}} (double \texorpdfstring{$\ast$}{*}arreglo, int n)
+\begin{DoxyCompactList}\small\item\em Calcula el momento centrado de orden 3 (asimetría no normalizada). \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{estadistica_8h_a05a1f2c6d7b7a018cfe80fcbec9dcc6d}{calcular\+Momento\+Centrado4}} (double \texorpdfstring{$\ast$}{*}arreglo, int n)
+\begin{DoxyCompactList}\small\item\em Calcula el momento centrado de orden 4. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{estadistica_8h_a17e26f63260bc39ae20dc31a1ded65d7}{calcular\+Momento\+Estandar2}} (double \texorpdfstring{$\ast$}{*}arreglo, int n)
+\begin{DoxyCompactList}\small\item\em Calcula el momento estándar de orden 2. \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{estadistica_8h_a243787d764b896280d35e079c95cc1fa}{calcular\+Momento\+Estandar3}} (double \texorpdfstring{$\ast$}{*}arreglo, int n)
+\begin{DoxyCompactList}\small\item\em Calcula el momento estándar de orden 3 (coeficiente de asimetría). \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{estadistica_8h_a120219c59b07e8a17bb726cbfe3a2a01}{calcular\+Momento\+Estandar4}} (double \texorpdfstring{$\ast$}{*}arreglo, int n)
+\begin{DoxyCompactList}\small\item\em Calcula el momento estándar de orden 4 (curtosis). \end{DoxyCompactList}\item 
+double \doxymbox{\hyperlink{estadistica_8h_aa2082365ef13bde19613c17e27991828}{calcular\+Curtosis}} (double \texorpdfstring{$\ast$}{*}arreglo, int n)
+\begin{DoxyCompactList}\small\item\em Calcula la curtosis (b₂) del arreglo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Declaraciones de las funciones para el cálculo de medidas estadísticas. 
+
+Este módulo define las 15 medidas estadísticas requeridas en la Práctica 2, cumpliendo la regla de una función separada por cada medida. Las funciones que operan sobre datos ordenados requieren que el arreglo haya sido previamente ordenado de forma ascendente.
+
+\begin{DoxyDate}{Date}
+Junio 2026 
+\end{DoxyDate}
+
+
+\label{doc-func-members}
+\Hypertarget{estadistica_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{estadistica_8h_a8bcfa68db515d873098a40836976698f}\index{estadistica.h@{estadistica.h}!calcularCoeficienteVariacion@{calcularCoeficienteVariacion}}
+\index{calcularCoeficienteVariacion@{calcularCoeficienteVariacion}!estadistica.h@{estadistica.h}}
+\doxysubsubsection{\texorpdfstring{calcularCoeficienteVariacion()}{calcularCoeficienteVariacion()}}
+{\footnotesize\ttfamily \label{estadistica_8h_a8bcfa68db515d873098a40836976698f} 
+double calcular\+Coeficiente\+Variacion (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{arreglo}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Calcula el coeficiente de variación del arreglo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arreglo} & Arreglo de doubles. \\
+\hline
+{\em n} & Número de elementos (n \texorpdfstring{$>$}{>}= 1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+CV = σ /\+ \texorpdfstring{$\vert$}{|}µ\texorpdfstring{$\vert$}{|}, o NAN si la media es cero. 
+\end{DoxyReturn}
+\Hypertarget{estadistica_8h_a2afe608a74c966fb30b74106777f1dd4}\index{estadistica.h@{estadistica.h}!calcularCuartoCuartil@{calcularCuartoCuartil}}
+\index{calcularCuartoCuartil@{calcularCuartoCuartil}!estadistica.h@{estadistica.h}}
+\doxysubsubsection{\texorpdfstring{calcularCuartoCuartil()}{calcularCuartoCuartil()}}
+{\footnotesize\ttfamily \label{estadistica_8h_a2afe608a74c966fb30b74106777f1dd4} 
+double calcular\+Cuarto\+Cuartil (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{arreglo}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Calcula el cuarto cuartil Q4 (máximo, percentil 100). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arreglo} & Arreglo de doubles ordenado ascendentemente. \\
+\hline
+{\em n} & Número de elementos (n \texorpdfstring{$>$}{>}= 1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valor de Q4 (elemento máximo). 
+\end{DoxyReturn}
+\Hypertarget{estadistica_8h_aa2082365ef13bde19613c17e27991828}\index{estadistica.h@{estadistica.h}!calcularCurtosis@{calcularCurtosis}}
+\index{calcularCurtosis@{calcularCurtosis}!estadistica.h@{estadistica.h}}
+\doxysubsubsection{\texorpdfstring{calcularCurtosis()}{calcularCurtosis()}}
+{\footnotesize\ttfamily \label{estadistica_8h_aa2082365ef13bde19613c17e27991828} 
+double calcular\+Curtosis (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{arreglo}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Calcula la curtosis (b₂) del arreglo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arreglo} & Arreglo de doubles. \\
+\hline
+{\em n} & Número de elementos (n \texorpdfstring{$>$}{>}= 1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+b₂ = µ₄/\+σ⁴ = momento estándar de orden 4, o NAN si σ = 0. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+b₂ = 3 para una distribución normal. Valores \texorpdfstring{$>$}{>} 3 indican leptocurtosis; valores \texorpdfstring{$<$}{<} 3 indican platicurtosis. 
+\end{DoxyNote}
+\Hypertarget{estadistica_8h_a6ef9c92996698a88e0752a751396b202}\index{estadistica.h@{estadistica.h}!calcularDecil@{calcularDecil}}
+\index{calcularDecil@{calcularDecil}!estadistica.h@{estadistica.h}}
+\doxysubsubsection{\texorpdfstring{calcularDecil()}{calcularDecil()}}
+{\footnotesize\ttfamily \label{estadistica_8h_a6ef9c92996698a88e0752a751396b202} 
+double calcular\+Decil (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{arreglo}{, }\item[{int}]{n}{, }\item[{int}]{k}{}\end{DoxyParamCaption})}
+
+
+
+Calcula el k-\/ésimo decil del arreglo ordenado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arreglo} & Arreglo de doubles ordenado ascendentemente. \\
+\hline
+{\em n} & Número de elementos (n \texorpdfstring{$>$}{>}= 1). \\
+\hline
+{\em k} & Índice del decil (1 \texorpdfstring{$<$}{<}= k \texorpdfstring{$<$}{<}= 10). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valor del decil Dₖ, o NAN si k está fuera de rango. 
+\end{DoxyReturn}
+\Hypertarget{estadistica_8h_a1bf3ddf7ea69b952446b70a1f7fa06b8}\index{estadistica.h@{estadistica.h}!calcularDesviacionEstandar@{calcularDesviacionEstandar}}
+\index{calcularDesviacionEstandar@{calcularDesviacionEstandar}!estadistica.h@{estadistica.h}}
+\doxysubsubsection{\texorpdfstring{calcularDesviacionEstandar()}{calcularDesviacionEstandar()}}
+{\footnotesize\ttfamily \label{estadistica_8h_a1bf3ddf7ea69b952446b70a1f7fa06b8} 
+double calcular\+Desviacion\+Estandar (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{arreglo}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Calcula la desviación estándar poblacional del arreglo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arreglo} & Arreglo de doubles. \\
+\hline
+{\em n} & Número de elementos (n \texorpdfstring{$>$}{>}= 1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Desviación estándar σ = √(varianza). 
+\end{DoxyReturn}
+\Hypertarget{estadistica_8h_a0ea202bffd5a03cc941aae7a92f4ad65}\index{estadistica.h@{estadistica.h}!calcularMaximo@{calcularMaximo}}
+\index{calcularMaximo@{calcularMaximo}!estadistica.h@{estadistica.h}}
+\doxysubsubsection{\texorpdfstring{calcularMaximo()}{calcularMaximo()}}
+{\footnotesize\ttfamily \label{estadistica_8h_a0ea202bffd5a03cc941aae7a92f4ad65} 
+double calcular\+Maximo (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{arreglo}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Calcula el valor máximo del arreglo ordenado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arreglo} & Arreglo de doubles ordenado ascendentemente. \\
+\hline
+{\em n} & Número de elementos (n \texorpdfstring{$>$}{>}= 1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valor máximo (último elemento). 
+\end{DoxyReturn}
+\Hypertarget{estadistica_8h_aa4999ccfdf597d4dd99885ebb07be578}\index{estadistica.h@{estadistica.h}!calcularMedia@{calcularMedia}}
+\index{calcularMedia@{calcularMedia}!estadistica.h@{estadistica.h}}
+\doxysubsubsection{\texorpdfstring{calcularMedia()}{calcularMedia()}}
+{\footnotesize\ttfamily \label{estadistica_8h_aa4999ccfdf597d4dd99885ebb07be578} 
+double calcular\+Media (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{arreglo}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Calcula la media aritmética del arreglo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arreglo} & Arreglo de doubles. \\
+\hline
+{\em n} & Número de elementos (n \texorpdfstring{$>$}{>}= 1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Media aritmética µ = (Σ xᵢ) /\+ n. 
+\end{DoxyReturn}
+\Hypertarget{estadistica_8h_ac8b4efd1dcced6fe3a1dc9ae14b87ece}\index{estadistica.h@{estadistica.h}!calcularMediaGeometrica@{calcularMediaGeometrica}}
+\index{calcularMediaGeometrica@{calcularMediaGeometrica}!estadistica.h@{estadistica.h}}
+\doxysubsubsection{\texorpdfstring{calcularMediaGeometrica()}{calcularMediaGeometrica()}}
+{\footnotesize\ttfamily \label{estadistica_8h_ac8b4efd1dcced6fe3a1dc9ae14b87ece} 
+double calcular\+Media\+Geometrica (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{arreglo}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Calcula la media geométrica del arreglo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arreglo} & Arreglo de doubles con todos los valores estrictamente positivos. \\
+\hline
+{\em n} & Número de elementos (n \texorpdfstring{$>$}{>}= 1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Media geométrica (∏ xᵢ)\texorpdfstring{$^\wedge$}{\string^}(1/\+n), o NAN si algún valor es \texorpdfstring{$<$}{<}= 0. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Usa logaritmos internamente para evitar desbordamiento con n grande. 
+\end{DoxyNote}
+\Hypertarget{estadistica_8h_af6a90b9669629cd41ac2263251204413}\index{estadistica.h@{estadistica.h}!calcularMediana@{calcularMediana}}
+\index{calcularMediana@{calcularMediana}!estadistica.h@{estadistica.h}}
+\doxysubsubsection{\texorpdfstring{calcularMediana()}{calcularMediana()}}
+{\footnotesize\ttfamily \label{estadistica_8h_af6a90b9669629cd41ac2263251204413} 
+double calcular\+Mediana (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{arreglo}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Calcula la mediana del arreglo ordenado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arreglo} & Arreglo de doubles ordenado ascendentemente. \\
+\hline
+{\em n} & Número de elementos (n \texorpdfstring{$>$}{>}= 1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Elemento central si n es impar; promedio de los dos centrales si n es par. 
+\end{DoxyReturn}
+\Hypertarget{estadistica_8h_aec127ae549b40c36185c17ea35d19a11}\index{estadistica.h@{estadistica.h}!calcularMinimo@{calcularMinimo}}
+\index{calcularMinimo@{calcularMinimo}!estadistica.h@{estadistica.h}}
+\doxysubsubsection{\texorpdfstring{calcularMinimo()}{calcularMinimo()}}
+{\footnotesize\ttfamily \label{estadistica_8h_aec127ae549b40c36185c17ea35d19a11} 
+double calcular\+Minimo (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{arreglo}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Calcula el valor mínimo del arreglo ordenado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arreglo} & Arreglo de doubles ordenado ascendentemente. \\
+\hline
+{\em n} & Número de elementos (n \texorpdfstring{$>$}{>}= 1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valor mínimo (primer elemento). 
+\end{DoxyReturn}
+\Hypertarget{estadistica_8h_affc6f33e9534c7e2d0e8052ba9fc00f8}\index{estadistica.h@{estadistica.h}!calcularModa@{calcularModa}}
+\index{calcularModa@{calcularModa}!estadistica.h@{estadistica.h}}
+\doxysubsubsection{\texorpdfstring{calcularModa()}{calcularModa()}}
+{\footnotesize\ttfamily \label{estadistica_8h_affc6f33e9534c7e2d0e8052ba9fc00f8} 
+double calcular\+Moda (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{arreglo}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Calcula la moda del arreglo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arreglo} & Arreglo de doubles. \\
+\hline
+{\em n} & Número de elementos (n \texorpdfstring{$>$}{>}= 1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valor con mayor frecuencia de repetición, o NAN si todos son únicos. 
+\end{DoxyReturn}
+\Hypertarget{estadistica_8h_a333d0fd67b806dbebe5e544f7ce83831}\index{estadistica.h@{estadistica.h}!calcularMomento0@{calcularMomento0}}
+\index{calcularMomento0@{calcularMomento0}!estadistica.h@{estadistica.h}}
+\doxysubsubsection{\texorpdfstring{calcularMomento0()}{calcularMomento0()}}
+{\footnotesize\ttfamily \label{estadistica_8h_a333d0fd67b806dbebe5e544f7ce83831} 
+double calcular\+Momento0 (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{arreglo}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Calcula el momento no centrado de orden 0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arreglo} & Arreglo de doubles (no utilizado, por definición α₀ = 1). \\
+\hline
+{\em n} & Número de elementos. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1.\+0 (por definición). 
+\end{DoxyReturn}
+\Hypertarget{estadistica_8h_a8a841e040160d5527763e3c557ea8512}\index{estadistica.h@{estadistica.h}!calcularMomento1@{calcularMomento1}}
+\index{calcularMomento1@{calcularMomento1}!estadistica.h@{estadistica.h}}
+\doxysubsubsection{\texorpdfstring{calcularMomento1()}{calcularMomento1()}}
+{\footnotesize\ttfamily \label{estadistica_8h_a8a841e040160d5527763e3c557ea8512} 
+double calcular\+Momento1 (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{arreglo}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Calcula el momento no centrado de orden 1 (media aritmética). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arreglo} & Arreglo de doubles. \\
+\hline
+{\em n} & Número de elementos (n \texorpdfstring{$>$}{>}= 1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+α₁ = µ = (Σ xᵢ) /\+ n. 
+\end{DoxyReturn}
+\Hypertarget{estadistica_8h_a3ec7450d62eb3be7bcbf1bb44ad79844}\index{estadistica.h@{estadistica.h}!calcularMomento2@{calcularMomento2}}
+\index{calcularMomento2@{calcularMomento2}!estadistica.h@{estadistica.h}}
+\doxysubsubsection{\texorpdfstring{calcularMomento2()}{calcularMomento2()}}
+{\footnotesize\ttfamily \label{estadistica_8h_a3ec7450d62eb3be7bcbf1bb44ad79844} 
+double calcular\+Momento2 (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{arreglo}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Calcula el momento no centrado de orden 2. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arreglo} & Arreglo de doubles. \\
+\hline
+{\em n} & Número de elementos (n \texorpdfstring{$>$}{>}= 1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+α₂ = (Σ xᵢ²) /\+ n. 
+\end{DoxyReturn}
+\Hypertarget{estadistica_8h_a09d635207a6bd7b87c1c81f3380107db}\index{estadistica.h@{estadistica.h}!calcularMomento3@{calcularMomento3}}
+\index{calcularMomento3@{calcularMomento3}!estadistica.h@{estadistica.h}}
+\doxysubsubsection{\texorpdfstring{calcularMomento3()}{calcularMomento3()}}
+{\footnotesize\ttfamily \label{estadistica_8h_a09d635207a6bd7b87c1c81f3380107db} 
+double calcular\+Momento3 (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{arreglo}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Calcula el momento no centrado de orden 3. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arreglo} & Arreglo de doubles. \\
+\hline
+{\em n} & Número de elementos (n \texorpdfstring{$>$}{>}= 1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+α₃ = (Σ xᵢ³) /\+ n. 
+\end{DoxyReturn}
+\Hypertarget{estadistica_8h_a4710d996b2354cceec94642164858992}\index{estadistica.h@{estadistica.h}!calcularMomento4@{calcularMomento4}}
+\index{calcularMomento4@{calcularMomento4}!estadistica.h@{estadistica.h}}
+\doxysubsubsection{\texorpdfstring{calcularMomento4()}{calcularMomento4()}}
+{\footnotesize\ttfamily \label{estadistica_8h_a4710d996b2354cceec94642164858992} 
+double calcular\+Momento4 (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{arreglo}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Calcula el momento no centrado de orden 4. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arreglo} & Arreglo de doubles. \\
+\hline
+{\em n} & Número de elementos (n \texorpdfstring{$>$}{>}= 1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+α₄ = (Σ xᵢ⁴) /\+ n. 
+\end{DoxyReturn}
+\Hypertarget{estadistica_8h_a9d47b2017367cc4f92b3bf84346d7f6f}\index{estadistica.h@{estadistica.h}!calcularMomentoCentrado0@{calcularMomentoCentrado0}}
+\index{calcularMomentoCentrado0@{calcularMomentoCentrado0}!estadistica.h@{estadistica.h}}
+\doxysubsubsection{\texorpdfstring{calcularMomentoCentrado0()}{calcularMomentoCentrado0()}}
+{\footnotesize\ttfamily \label{estadistica_8h_a9d47b2017367cc4f92b3bf84346d7f6f} 
+double calcular\+Momento\+Centrado0 (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{arreglo}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Calcula el momento centrado de orden 0. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arreglo} & Arreglo de doubles (no utilizado, por definición µ₀ = 1). \\
+\hline
+{\em n} & Número de elementos. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1.\+0 (por definición). 
+\end{DoxyReturn}
+\Hypertarget{estadistica_8h_a430adad833e91d8b1d2220ab5f1e0f96}\index{estadistica.h@{estadistica.h}!calcularMomentoCentrado1@{calcularMomentoCentrado1}}
+\index{calcularMomentoCentrado1@{calcularMomentoCentrado1}!estadistica.h@{estadistica.h}}
+\doxysubsubsection{\texorpdfstring{calcularMomentoCentrado1()}{calcularMomentoCentrado1()}}
+{\footnotesize\ttfamily \label{estadistica_8h_a430adad833e91d8b1d2220ab5f1e0f96} 
+double calcular\+Momento\+Centrado1 (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{arreglo}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Calcula el momento centrado de orden 1. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arreglo} & Arreglo de doubles (no utilizado, por definición µ₁ = 0). \\
+\hline
+{\em n} & Número de elementos. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0.\+0 (por definición, la desviación respecto a la media es cero). 
+\end{DoxyReturn}
+\Hypertarget{estadistica_8h_a01fb01e1a84e97a668b46ce3199e10d6}\index{estadistica.h@{estadistica.h}!calcularMomentoCentrado2@{calcularMomentoCentrado2}}
+\index{calcularMomentoCentrado2@{calcularMomentoCentrado2}!estadistica.h@{estadistica.h}}
+\doxysubsubsection{\texorpdfstring{calcularMomentoCentrado2()}{calcularMomentoCentrado2()}}
+{\footnotesize\ttfamily \label{estadistica_8h_a01fb01e1a84e97a668b46ce3199e10d6} 
+double calcular\+Momento\+Centrado2 (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{arreglo}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Calcula el momento centrado de orden 2 (varianza). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arreglo} & Arreglo de doubles. \\
+\hline
+{\em n} & Número de elementos (n \texorpdfstring{$>$}{>}= 1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+µ₂ = σ² = (Σ (xᵢ -\/ µ)²) /\+ n. 
+\end{DoxyReturn}
+\Hypertarget{estadistica_8h_a8f0a2ed711530e3bbc38df3c89ec34ba}\index{estadistica.h@{estadistica.h}!calcularMomentoCentrado3@{calcularMomentoCentrado3}}
+\index{calcularMomentoCentrado3@{calcularMomentoCentrado3}!estadistica.h@{estadistica.h}}
+\doxysubsubsection{\texorpdfstring{calcularMomentoCentrado3()}{calcularMomentoCentrado3()}}
+{\footnotesize\ttfamily \label{estadistica_8h_a8f0a2ed711530e3bbc38df3c89ec34ba} 
+double calcular\+Momento\+Centrado3 (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{arreglo}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Calcula el momento centrado de orden 3 (asimetría no normalizada). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arreglo} & Arreglo de doubles. \\
+\hline
+{\em n} & Número de elementos (n \texorpdfstring{$>$}{>}= 1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+µ₃ = (Σ (xᵢ -\/ µ)³) /\+ n. 
+\end{DoxyReturn}
+\Hypertarget{estadistica_8h_a05a1f2c6d7b7a018cfe80fcbec9dcc6d}\index{estadistica.h@{estadistica.h}!calcularMomentoCentrado4@{calcularMomentoCentrado4}}
+\index{calcularMomentoCentrado4@{calcularMomentoCentrado4}!estadistica.h@{estadistica.h}}
+\doxysubsubsection{\texorpdfstring{calcularMomentoCentrado4()}{calcularMomentoCentrado4()}}
+{\footnotesize\ttfamily \label{estadistica_8h_a05a1f2c6d7b7a018cfe80fcbec9dcc6d} 
+double calcular\+Momento\+Centrado4 (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{arreglo}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Calcula el momento centrado de orden 4. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arreglo} & Arreglo de doubles. \\
+\hline
+{\em n} & Número de elementos (n \texorpdfstring{$>$}{>}= 1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+µ₄ = (Σ (xᵢ -\/ µ)⁴) /\+ n. 
+\end{DoxyReturn}
+\Hypertarget{estadistica_8h_a17e26f63260bc39ae20dc31a1ded65d7}\index{estadistica.h@{estadistica.h}!calcularMomentoEstandar2@{calcularMomentoEstandar2}}
+\index{calcularMomentoEstandar2@{calcularMomentoEstandar2}!estadistica.h@{estadistica.h}}
+\doxysubsubsection{\texorpdfstring{calcularMomentoEstandar2()}{calcularMomentoEstandar2()}}
+{\footnotesize\ttfamily \label{estadistica_8h_a17e26f63260bc39ae20dc31a1ded65d7} 
+double calcular\+Momento\+Estandar2 (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{arreglo}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Calcula el momento estándar de orden 2. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arreglo} & Arreglo de doubles. \\
+\hline
+{\em n} & Número de elementos (n \texorpdfstring{$>$}{>}= 1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+µ₂/\+σ² = 1.\+0 (por definición), o NAN si σ = 0. 
+\end{DoxyReturn}
+\Hypertarget{estadistica_8h_a243787d764b896280d35e079c95cc1fa}\index{estadistica.h@{estadistica.h}!calcularMomentoEstandar3@{calcularMomentoEstandar3}}
+\index{calcularMomentoEstandar3@{calcularMomentoEstandar3}!estadistica.h@{estadistica.h}}
+\doxysubsubsection{\texorpdfstring{calcularMomentoEstandar3()}{calcularMomentoEstandar3()}}
+{\footnotesize\ttfamily \label{estadistica_8h_a243787d764b896280d35e079c95cc1fa} 
+double calcular\+Momento\+Estandar3 (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{arreglo}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Calcula el momento estándar de orden 3 (coeficiente de asimetría). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arreglo} & Arreglo de doubles. \\
+\hline
+{\em n} & Número de elementos (n \texorpdfstring{$>$}{>}= 1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+µ₃/\+σ³ (skewness), o NAN si σ = 0. 
+\end{DoxyReturn}
+\Hypertarget{estadistica_8h_a120219c59b07e8a17bb726cbfe3a2a01}\index{estadistica.h@{estadistica.h}!calcularMomentoEstandar4@{calcularMomentoEstandar4}}
+\index{calcularMomentoEstandar4@{calcularMomentoEstandar4}!estadistica.h@{estadistica.h}}
+\doxysubsubsection{\texorpdfstring{calcularMomentoEstandar4()}{calcularMomentoEstandar4()}}
+{\footnotesize\ttfamily \label{estadistica_8h_a120219c59b07e8a17bb726cbfe3a2a01} 
+double calcular\+Momento\+Estandar4 (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{arreglo}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Calcula el momento estándar de orden 4 (curtosis). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arreglo} & Arreglo de doubles. \\
+\hline
+{\em n} & Número de elementos (n \texorpdfstring{$>$}{>}= 1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+µ₄/\+σ⁴, o NAN si σ = 0. 
+\end{DoxyReturn}
+\Hypertarget{estadistica_8h_a6d333e694cc47a05228c8676846cbab5}\index{estadistica.h@{estadistica.h}!calcularPercentil@{calcularPercentil}}
+\index{calcularPercentil@{calcularPercentil}!estadistica.h@{estadistica.h}}
+\doxysubsubsection{\texorpdfstring{calcularPercentil()}{calcularPercentil()}}
+{\footnotesize\ttfamily \label{estadistica_8h_a6d333e694cc47a05228c8676846cbab5} 
+double calcular\+Percentil (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{arreglo}{, }\item[{int}]{n}{, }\item[{int}]{k}{}\end{DoxyParamCaption})}
+
+
+
+Calcula el k-\/ésimo percentil del arreglo ordenado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arreglo} & Arreglo de doubles ordenado ascendentemente. \\
+\hline
+{\em n} & Número de elementos (n \texorpdfstring{$>$}{>}= 1). \\
+\hline
+{\em k} & Índice del percentil (1 \texorpdfstring{$<$}{<}= k \texorpdfstring{$<$}{<}= 99). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valor del percentil Pₖ, o NAN si k está fuera de rango. 
+\end{DoxyReturn}
+\Hypertarget{estadistica_8h_a3087996d85cfbcd47c526155d36e1b10}\index{estadistica.h@{estadistica.h}!calcularPrimerCuartil@{calcularPrimerCuartil}}
+\index{calcularPrimerCuartil@{calcularPrimerCuartil}!estadistica.h@{estadistica.h}}
+\doxysubsubsection{\texorpdfstring{calcularPrimerCuartil()}{calcularPrimerCuartil()}}
+{\footnotesize\ttfamily \label{estadistica_8h_a3087996d85cfbcd47c526155d36e1b10} 
+double calcular\+Primer\+Cuartil (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{arreglo}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Calcula el primer cuartil Q1 (percentil 25). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arreglo} & Arreglo de doubles ordenado ascendentemente. \\
+\hline
+{\em n} & Número de elementos (n \texorpdfstring{$>$}{>}= 1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valor de Q1. 
+\end{DoxyReturn}
+\Hypertarget{estadistica_8h_a520733f038e40a65d7cef8813e7abfd5}\index{estadistica.h@{estadistica.h}!calcularSegundoCuartil@{calcularSegundoCuartil}}
+\index{calcularSegundoCuartil@{calcularSegundoCuartil}!estadistica.h@{estadistica.h}}
+\doxysubsubsection{\texorpdfstring{calcularSegundoCuartil()}{calcularSegundoCuartil()}}
+{\footnotesize\ttfamily \label{estadistica_8h_a520733f038e40a65d7cef8813e7abfd5} 
+double calcular\+Segundo\+Cuartil (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{arreglo}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Calcula el segundo cuartil Q2 (mediana, percentil 50). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arreglo} & Arreglo de doubles ordenado ascendentemente. \\
+\hline
+{\em n} & Número de elementos (n \texorpdfstring{$>$}{>}= 1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valor de Q2. 
+\end{DoxyReturn}
+\Hypertarget{estadistica_8h_a11df4a126fc1ee68e1c198cebcdc099b}\index{estadistica.h@{estadistica.h}!calcularTercerCuartil@{calcularTercerCuartil}}
+\index{calcularTercerCuartil@{calcularTercerCuartil}!estadistica.h@{estadistica.h}}
+\doxysubsubsection{\texorpdfstring{calcularTercerCuartil()}{calcularTercerCuartil()}}
+{\footnotesize\ttfamily \label{estadistica_8h_a11df4a126fc1ee68e1c198cebcdc099b} 
+double calcular\+Tercer\+Cuartil (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{arreglo}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Calcula el tercer cuartil Q3 (percentil 75). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arreglo} & Arreglo de doubles ordenado ascendentemente. \\
+\hline
+{\em n} & Número de elementos (n \texorpdfstring{$>$}{>}= 1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valor de Q3. 
+\end{DoxyReturn}
+\Hypertarget{estadistica_8h_a518ee8e1b1d0dc80ff97fba533937321}\index{estadistica.h@{estadistica.h}!calcularVarianza@{calcularVarianza}}
+\index{calcularVarianza@{calcularVarianza}!estadistica.h@{estadistica.h}}
+\doxysubsubsection{\texorpdfstring{calcularVarianza()}{calcularVarianza()}}
+{\footnotesize\ttfamily \label{estadistica_8h_a518ee8e1b1d0dc80ff97fba533937321} 
+double calcular\+Varianza (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{arreglo}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Calcula la varianza poblacional del arreglo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arreglo} & Arreglo de doubles. \\
+\hline
+{\em n} & Número de elementos (n \texorpdfstring{$>$}{>}= 1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Varianza σ² = (Σ (xᵢ -\/ µ)²) /\+ n. 
+\end{DoxyReturn}

@@ -17,7 +17,7 @@ generador-analizador-estadistico/
 ├── build/
 ├── docs/
 │   ├── html/
-│   ├── Reporte_Practica2.pdf
+│   ├── Reporte_Proyecto2.pdf
 │   └── Doxyfile
 ├── include/
 │   ├── estadistica.h

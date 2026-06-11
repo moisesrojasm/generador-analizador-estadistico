@@ -1,0 +1,102 @@
+\doxysection{estadistica.\+h}
+\hypertarget{estadistica_8h_source}{}\label{estadistica_8h_source}\index{include/estadistica.h@{include/estadistica.h}}
+\doxymbox{\hyperlink{estadistica_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#ifndef\ ESTADISTICA\_H}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ ESTADISTICA\_H}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{comment}{/*\ =========================================================}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *\ Medidas\ de\ posición\ central}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *\ =========================================================\ */}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00026\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{estadistica_8h_a0ea202bffd5a03cc941aae7a92f4ad65}{calcularMaximo}}(\textcolor{keywordtype}{double}\ *arreglo,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00034\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{estadistica_8h_aec127ae549b40c36185c17ea35d19a11}{calcularMinimo}}(\textcolor{keywordtype}{double}\ *arreglo,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00042\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{estadistica_8h_aa4999ccfdf597d4dd99885ebb07be578}{calcularMedia}}(\textcolor{keywordtype}{double}\ *arreglo,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00051\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{estadistica_8h_ac8b4efd1dcced6fe3a1dc9ae14b87ece}{calcularMediaGeometrica}}(\textcolor{keywordtype}{double}\ *arreglo,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00059\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{estadistica_8h_af6a90b9669629cd41ac2263251204413}{calcularMediana}}(\textcolor{keywordtype}{double}\ *arreglo,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00067\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{estadistica_8h_affc6f33e9534c7e2d0e8052ba9fc00f8}{calcularModa}}(\textcolor{keywordtype}{double}\ *arreglo,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{comment}{/*\ =========================================================}}
+\DoxyCodeLine{00070\ \textcolor{comment}{\ *\ Medidas\ de\ dispersión}}
+\DoxyCodeLine{00071\ \textcolor{comment}{\ *\ =========================================================\ */}}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00079\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{estadistica_8h_a518ee8e1b1d0dc80ff97fba533937321}{calcularVarianza}}(\textcolor{keywordtype}{double}\ *arreglo,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00087\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{estadistica_8h_a1bf3ddf7ea69b952446b70a1f7fa06b8}{calcularDesviacionEstandar}}(\textcolor{keywordtype}{double}\ *arreglo,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00095\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{estadistica_8h_a8bcfa68db515d873098a40836976698f}{calcularCoeficienteVariacion}}(\textcolor{keywordtype}{double}\ *arreglo,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \textcolor{comment}{/*\ =========================================================}}
+\DoxyCodeLine{00098\ \textcolor{comment}{\ *\ Cuartiles\ (requieren\ arreglo\ ordenado)}}
+\DoxyCodeLine{00099\ \textcolor{comment}{\ *\ =========================================================\ */}}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00107\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{estadistica_8h_a3087996d85cfbcd47c526155d36e1b10}{calcularPrimerCuartil}}(\textcolor{keywordtype}{double}\ *arreglo,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00115\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{estadistica_8h_a520733f038e40a65d7cef8813e7abfd5}{calcularSegundoCuartil}}(\textcolor{keywordtype}{double}\ *arreglo,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00123\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{estadistica_8h_a11df4a126fc1ee68e1c198cebcdc099b}{calcularTercerCuartil}}(\textcolor{keywordtype}{double}\ *arreglo,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00131\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{estadistica_8h_a2afe608a74c966fb30b74106777f1dd4}{calcularCuartoCuartil}}(\textcolor{keywordtype}{double}\ *arreglo,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00133\ \textcolor{comment}{/*\ =========================================================}}
+\DoxyCodeLine{00134\ \textcolor{comment}{\ *\ Deciles\ y\ Percentiles\ (requieren\ arreglo\ ordenado)}}
+\DoxyCodeLine{00135\ \textcolor{comment}{\ *\ =========================================================\ */}}
+\DoxyCodeLine{00136\ }
+\DoxyCodeLine{00144\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{estadistica_8h_a6ef9c92996698a88e0752a751396b202}{calcularDecil}}(\textcolor{keywordtype}{double}\ *arreglo,\ \textcolor{keywordtype}{int}\ n,\ \textcolor{keywordtype}{int}\ k);}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00153\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{estadistica_8h_a6d333e694cc47a05228c8676846cbab5}{calcularPercentil}}(\textcolor{keywordtype}{double}\ *arreglo,\ \textcolor{keywordtype}{int}\ n,\ \textcolor{keywordtype}{int}\ k);}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00155\ \textcolor{comment}{/*\ =========================================================}}
+\DoxyCodeLine{00156\ \textcolor{comment}{\ *\ Momentos\ no\ centrados\ (orden\ 0\ a\ 4)}}
+\DoxyCodeLine{00157\ \textcolor{comment}{\ *\ =========================================================\ */}}
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00165\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{estadistica_8h_a333d0fd67b806dbebe5e544f7ce83831}{calcularMomento0}}(\textcolor{keywordtype}{double}\ *arreglo,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00166\ }
+\DoxyCodeLine{00173\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{estadistica_8h_a8a841e040160d5527763e3c557ea8512}{calcularMomento1}}(\textcolor{keywordtype}{double}\ *arreglo,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00174\ }
+\DoxyCodeLine{00181\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{estadistica_8h_a3ec7450d62eb3be7bcbf1bb44ad79844}{calcularMomento2}}(\textcolor{keywordtype}{double}\ *arreglo,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00182\ }
+\DoxyCodeLine{00189\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{estadistica_8h_a09d635207a6bd7b87c1c81f3380107db}{calcularMomento3}}(\textcolor{keywordtype}{double}\ *arreglo,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00197\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{estadistica_8h_a4710d996b2354cceec94642164858992}{calcularMomento4}}(\textcolor{keywordtype}{double}\ *arreglo,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00198\ }
+\DoxyCodeLine{00199\ \textcolor{comment}{/*\ =========================================================}}
+\DoxyCodeLine{00200\ \textcolor{comment}{\ *\ Momentos\ centrados\ (orden\ 0\ a\ 4)}}
+\DoxyCodeLine{00201\ \textcolor{comment}{\ *\ =========================================================\ */}}
+\DoxyCodeLine{00202\ }
+\DoxyCodeLine{00209\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{estadistica_8h_a9d47b2017367cc4f92b3bf84346d7f6f}{calcularMomentoCentrado0}}(\textcolor{keywordtype}{double}\ *arreglo,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00210\ }
+\DoxyCodeLine{00217\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{estadistica_8h_a430adad833e91d8b1d2220ab5f1e0f96}{calcularMomentoCentrado1}}(\textcolor{keywordtype}{double}\ *arreglo,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00218\ }
+\DoxyCodeLine{00225\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{estadistica_8h_a01fb01e1a84e97a668b46ce3199e10d6}{calcularMomentoCentrado2}}(\textcolor{keywordtype}{double}\ *arreglo,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00226\ }
+\DoxyCodeLine{00233\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{estadistica_8h_a8f0a2ed711530e3bbc38df3c89ec34ba}{calcularMomentoCentrado3}}(\textcolor{keywordtype}{double}\ *arreglo,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00234\ }
+\DoxyCodeLine{00241\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{estadistica_8h_a05a1f2c6d7b7a018cfe80fcbec9dcc6d}{calcularMomentoCentrado4}}(\textcolor{keywordtype}{double}\ *arreglo,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00242\ }
+\DoxyCodeLine{00243\ \textcolor{comment}{/*\ =========================================================}}
+\DoxyCodeLine{00244\ \textcolor{comment}{\ *\ Momentos\ estándar\ (orden\ 2,\ 3\ y\ 4)}}
+\DoxyCodeLine{00245\ \textcolor{comment}{\ *\ =========================================================\ */}}
+\DoxyCodeLine{00246\ }
+\DoxyCodeLine{00253\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{estadistica_8h_a17e26f63260bc39ae20dc31a1ded65d7}{calcularMomentoEstandar2}}(\textcolor{keywordtype}{double}\ *arreglo,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00254\ }
+\DoxyCodeLine{00261\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{estadistica_8h_a243787d764b896280d35e079c95cc1fa}{calcularMomentoEstandar3}}(\textcolor{keywordtype}{double}\ *arreglo,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00262\ }
+\DoxyCodeLine{00269\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{estadistica_8h_a120219c59b07e8a17bb726cbfe3a2a01}{calcularMomentoEstandar4}}(\textcolor{keywordtype}{double}\ *arreglo,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00270\ }
+\DoxyCodeLine{00271\ \textcolor{comment}{/*\ =========================================================}}
+\DoxyCodeLine{00272\ \textcolor{comment}{\ *\ Curtosis}}
+\DoxyCodeLine{00273\ \textcolor{comment}{\ *\ =========================================================\ */}}
+\DoxyCodeLine{00274\ }
+\DoxyCodeLine{00283\ \textcolor{keywordtype}{double}\ \doxymbox{\hyperlink{estadistica_8h_aa2082365ef13bde19613c17e27991828}{calcularCurtosis}}(\textcolor{keywordtype}{double}\ *arreglo,\ \textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00284\ }
+\DoxyCodeLine{00285\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ ESTADISTICA\_H\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}
