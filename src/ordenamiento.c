@@ -1,15 +1,13 @@
 /**
  * @file ordenamiento.c
- * @brief Implementación de 8 algoritmos de ordenamiento adaptados para arreglos double.
+ * @brief Implementación de 8 algoritmos de ordenamiento adaptados para arreglos double
  */
 
 #include "ordenamiento.h"
 #include <stdlib.h>
 #include <stdio.h>
 
-/* =========================================================
- * 1. Bubble Sort
- * ========================================================= */
+// 1. Bubble Sort
 void bubbleSort(double *arreglo, int n) {
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - i - 1; j++) {
@@ -22,9 +20,7 @@ void bubbleSort(double *arreglo, int n) {
     }
 }
 
-/* =========================================================
- * 2. Odd-Even Sort (Pares y Nones)
- * ========================================================= */
+// 2. Odd-Even Sort (Pares y Nones)
 void oddEvenSort(double *arreglo, int n) {
     int ordenado = 0;
     while (!ordenado) {
@@ -50,9 +46,7 @@ void oddEvenSort(double *arreglo, int n) {
     }
 }
 
-/* =========================================================
- * 3. Selection Sort
- * ========================================================= */
+// 3. Selection Sort
 void selectionSort(double *arreglo, int n) {
     for (int i = 0; i < n - 1; i++) {
         int min_idx = i;
@@ -69,9 +63,7 @@ void selectionSort(double *arreglo, int n) {
     }
 }
 
-/* =========================================================
- * 4. Insertion Sort
- * ========================================================= */
+// 4. Insertion Sort
 void insertionSort(double *arreglo, int n) {
     for (int i = 1; i < n; i++) {
         double key = arreglo[i];
@@ -84,9 +76,7 @@ void insertionSort(double *arreglo, int n) {
     }
 }
 
-/* =========================================================
- * 5. Cocktail Sort
- * ========================================================= */
+// 5. Cocktail Sort
 void cocktailSort(double *arreglo, int n) {
     int intercambiado = 1;
     int inicio = 0;
@@ -117,9 +107,7 @@ void cocktailSort(double *arreglo, int n) {
     }
 }
 
-/* =========================================================
- * 6. Shell Sort
- * ========================================================= */
+// 6. Shell Sort
 void shellSort(double *arreglo, int n) {
     for (int gap = n / 2; gap > 0; gap /= 2) {
         for (int i = gap; i < n; i++) {
@@ -133,9 +121,7 @@ void shellSort(double *arreglo, int n) {
     }
 }
 
-/* =========================================================
- * 7. Bucket Sort (Adaptado para doubles continuos y negativos)
- * ========================================================= */
+// 7. Bucket Sort (Adaptado para doubles continuos y negativos)
 /* Estructura para la lista ligada de cada cubeta */
 typedef struct NodoBucket {
     double valor;
@@ -193,9 +179,7 @@ void bucketSort(double *arreglo, int n) {
     free(cubetas);
 }
 
-/* =========================================================
- * 8. Counting Sort (Adaptado con factor de escala)
- * ========================================================= */
+// 8. Counting Sort (Adaptado con factor de escala)
 void countingSort(double *arreglo, int n) {
     if (n <= 1) return;
 

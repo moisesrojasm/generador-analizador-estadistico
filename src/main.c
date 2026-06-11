@@ -24,11 +24,9 @@
 
 #define MAX_MUESTRAS 100000
 
-/* Arreglo global compartido por todos los modulos */
 double datos[MAX_MUESTRAS];
 int N;
 
-/* Tabla de los 20 casos segun el PDF de la practica */
 typedef struct {
     int    caso;
     int    n;
